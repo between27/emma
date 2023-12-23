@@ -12,9 +12,10 @@
 <body>
 <div class="container mx-auto px-2 min-h-screen flex-col flex">
 <img src="{{asset('img/hero1.jpg')}}" alt="" class="w-screen h-screen absolute left-0 top-0 -z-10 object-cover opacity-65">
-<nav>
-<a href="{{path("home")}}">Home</a>
-<a href="{{path("app_tuto")}}">Tutoriel</a>
+<nav class=" bg-gray-100 p-4 rounded-2xl space-x-5">
+<a href="{{path("home")}}" class="text-4xl text-gray-700 underline transition duration-300">Accueil</a>
+<a href="{{path("app_tuto")}}" class="text-4xl text-gray-700 underline transition duration-300">Tutoriel</a>
+<a href="{{path("app_indices")}}" class="text-4xl text-gray-700 underline transition duration-300">Indices</a>
 </nav>
     {% block body %}
     {% endblock %}

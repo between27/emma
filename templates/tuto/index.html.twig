@@ -4,27 +4,26 @@
 
 {% block body %}
 
-<div class="flex flex-col items-center justify-center flex-grow">
-<h1 class="text-center text-4xl font-black text-gray-900">Bienvenue sur le site de tes cadeaux de Noël</h1>
-<p class=" text-2xl font-semibold">Le but du jeu est de trouver tes cadeaux à partir de certains indices que nous sommes seuls à connaitre.😉</p>
-<h1 class="text-center text-4xl font-black text-gray-900">Voici comment Jouer</h1>
-<div>
-<div class=" flex flex-col items-center">
-    <img class="w-80" src="{{asset('img/tuto1.png')}}" alt="">
-    <p class=" text-2xl font-semibold">Dans la barre d'url il te suffira de remplacer le texte après emma.aboudebug.com/ pour naviguer dans le site</p>
+    <div class="flex flex-col items-center justify-center flex-grow">
+        <h1 class="text-center text-4xl font-black text-gray-900">Bienvenue sur le site de tes cadeaux de Noël</h1>
+        <p class=" text-2xl font-semibold">Le but du jeu est de trouver tes cadeaux à partir de certains indices que
+            nous sommes seuls à connaitre.😉</p>
+        <h1 class="text-center text-4xl font-black text-gray-900">Voici comment Jouer</h1>
+        <div>
+            <div class=" flex flex-col items-center">
+                <img class="w-full" src="{{ asset('img/tuto1.png') }}" alt="">
+                <p class=" text-2xl font-semibold">Dans la barre d'url il te suffira de remplacer le texte après
+                    emma.aboudebug.com/ pour naviguer dans le site</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <img class="w-full" src="{{ asset('img/tuto2.png') }}" alt="">
+                <p class="whitespace-normal text-2xl font-semibold">Faisons un test, On va aller sur la page test1, donc
+                    ce que tu as à faire c'est de remplacer "tuto", dans la barre d'url par "test1"</p>
+
+            </div>
+
+        </div>
     </div>
-    <div class="flex flex-col items-center">
-    <img class="w-80"src="{{asset('img/tuto2.png')}}" alt="">
-    <p class="whitespace-normal text-2xl font-semibold">Faisons un test, On va aller sur la page test1, donc ce que tu as à faire c'est de remplacer "tuto", dans la barre d'url par "test1"</p>
-    <a href="{{path("app_indices")}}" class="text-white mt-10 bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center">
-    Voir les indices
-    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-</svg></a>
-    </div>
-    
-</div>
-</div>
 
 
 {% endblock %}

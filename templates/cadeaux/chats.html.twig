@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+
+{% block body %}
+
+    <div class="flex-grow flex flex-col items-center">
+        <div class="bg-gray-100 rounded p-3">
+            <h1 class="text-4xl font-bold text-center mb-5">Bingo plus qu'un</h1>
+            <p class="text-xl">Evidemment, ces trois chats, sont quand-même énormément importants pour toi, c'est pour ça que j'ai pensé à un cadeau qui pourra compléter
+                le precedent, Une image imprimée d'eux (Je rigole)
+                <br>
+                <br>
+
+                <br>
+                <br>
+                C'est un truc qu'on appelle un pop grip, à coller derriere le telephone, un peu comme ce truc que j'ai gagné à la kermesse de la SPA
+                et qui me permet de poser tranquillement mon tel.</p>
+        </div>
+        <div class="flex-grow w-4/5">
+        <img src="{{ asset('img/3chats.jpg') }}" class="w-full">
+        </div>
+
+    </div>
+
+{% endblock %}
